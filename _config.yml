@@ -98,4 +98,4 @@ feed:
   path: feed.xml
 
 include:
-  - .htaccess
+  - _redirects
