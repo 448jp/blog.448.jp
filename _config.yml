@@ -75,7 +75,7 @@ pagination_dir: page
 theme: brewski
 theme_config:
   logo:
-  google_analytics: UA-XXXXXXXX-X
+  google_analytics: UA-64730-4
   copyright:
     since: 1998
     name: OKI Yoshiya
