@@ -1,0 +1,18 @@
+@font-face {
+	font-family: MyYuGothic;
+	font-weight: normal;
+	src: local(YuGothic-Medium);
+}
+
+@font-face {
+	font-family: MyYuGothic;
+	font-weight: bold;
+	src: local(YuGothic-Bold);
+}
+
+body {
+	background-color: #ffffff;
+	font-family: -apple-system, BlinkMacSystemFont, MyYuGothic, "游ゴシック Medium", sans-serif;
+	line-height: 1.6;
+	color: #222831;
+}

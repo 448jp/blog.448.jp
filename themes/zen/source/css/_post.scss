@@ -1,0 +1,15 @@
+.post-content {
+	h2 {
+		margin: 1.8rem 0 0.4rem;
+		font-size: 32px;
+		font-weight: bold;
+
+		@media (max-width: 768px) {
+			font-size: 8vw;
+		}
+	}
+
+	p {
+		margin: 0 0 1.6rem;
+	}
+}

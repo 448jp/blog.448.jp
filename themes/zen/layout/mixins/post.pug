@@ -1,6 +1,5 @@
 mixin postInfo(item)
     .post-info
-        a
         != full_date(item.date, config.date_format)
         if item.from && (is_home() || is_post())
             a.post-from(href=item.from, target='_blank', title=item.from)
@@ -17,15 +16,13 @@ mixin posts()
     ul.home.post-list
         - page.posts.each(function (item) {
             li.post-list-item
-                article.post-block
-                    h2.post-title
-                        a.post-title-link(href=url_for(item.path) class="no-barba")
+                a.post-title-link(href=url_for(item.path) class="no-barba")
+                    article.post-block
+                        +postInfo(item)
+                        h2.post-title
                             +postTitle(item.title)
-                    +postInfo(item)
-                    .post-content
-                        != item.excerpt
-                    a.read-more(href=url_for(item.path))
-                        != __('read_more')
+                        .post-content
+                            != item.excerpt
         - })
 
 //- Archive Page
@@ -52,8 +49,8 @@ mixin postList()
 mixin post(item)
     .post
         article.post-block
+            +postInfo(item)
             h1.post-title
                 +postTitle(item.title)
-            +postInfo(item)
             .post-content
                 != item.content

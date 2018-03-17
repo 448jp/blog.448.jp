@@ -1,10 +1,6 @@
-body {
-	color: #222831;
-	line-height: 1.6;
-	background-color: #ffffff;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-	"Helvetica Neue", sans-serif;
-}
+@import "_structure";
+
+@import "_post";
 
 .wrap {
 	width: 90%;
@@ -34,7 +30,6 @@ h3,
 h4,
 h5,
 h6 {
-	letter-spacing: -.002em;
 	font-weight: 600;
 	line-height: 1.2;
 }
@@ -48,6 +43,11 @@ h6 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	@media (max-width: 768px) {
+		justify-content: flex-start;
+		margin-bottom: 32px;
+	}
 }
 
 .nav-list-link {
@@ -111,23 +111,27 @@ table tbody td :last-child {
 }
 
 header {
-	min-height: 7em;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
 	header {
+		display: block;
 		justify-content: center;
 	}
 }
 
 header .branding {
 	display: inline-block;
-	margin: .6em 0 0 0;
 	position: relative;
+
+	@media (max-width: 768px) {
+		display: block;
+		margin: 32px 0;
+	}
 }
 
 .logo-image:hover {
@@ -164,6 +168,10 @@ header .branding {
 header .nav-list-item {
 	display: inline-block;
 	padding: 1em .8em;
+
+	@media (max-width: 768px) {
+		padding: 0 8vw 0 0;
+	}
 }
 
 header .nav-list-item a {
@@ -176,7 +184,7 @@ header .nav-list-item a {
 }
 
 .home.post-list .post-list-item {
-	padding: 1em .4em;
+	margin-bottom: 84px;
 }
 
 .home.post-list .post-content h2:before,
@@ -223,17 +231,12 @@ header .nav-list-item a {
 }
 
 .post {
-	padding-top: 1em;
-}
-
-.post-block .post-title {
-	margin: .65em 0;
-	font-size: 1.5em;
 }
 
 .post-block .post-info {
 	color: #393e46;
-	margin: 1.2em 0;
+	margin: 1.2em 0 0;
+	font-size: 14px;
 }
 
 .post-block .post-info span {
@@ -247,14 +250,6 @@ header .nav-list-item a {
 	font-size: .7em;
 	color: #ffffff;
 	background-color: #e36b6b;
-}
-
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-	margin-bottom: 1em;
 }
 
 .post-content h2 a:before,
@@ -279,20 +274,15 @@ header .nav-list-item a {
 
 .post-content h1,
 .post-block .post-title {
-	margin-top: 0;
-	font-size: 3em;
-}
+	margin: 0 0 1.8rem;
+	font-size: 42px;
+	font-family: "dnp-shuei-anti-std", sans-serif;
+	font-feature-settings : "palt";
 
-@media (max-width: 768px) {
-	.post-content h1,
-	.post-block .post-title {
-		font-size: 12vw;
+	@media (max-width: 768px) {
+		font-size: 9vw;
+		line-height: 1.2;
 	}
-}
-
-.post-content h2 {
-	margin-top: 1.8em;
-	font-size: 2.8em;
 }
 
 .post-content h3 {
@@ -420,7 +410,7 @@ header .nav-list-item a {
 }
 
 main.container {
-	margin: 2em .7em;
+	margin: 2em 0;
 	min-height: 30vh;
 }
 
