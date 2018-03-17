@@ -71,9 +71,6 @@ video {
 	margin: 1rem auto;
 }
 
-/*table {
-  padding: 0;
-}*/
 table th {
 	font-weight: 600;
 	border: 0;
@@ -93,11 +90,6 @@ table tbody tr {
 
 table tbody tr:nth-child(2n) {
 	background-color: #f6f8fa;
-}
-
-table tbody td {
-	border: .05em solid transparent;
-	text-align: left;
 }
 
 table tbody th :first-child,
@@ -181,6 +173,8 @@ header .nav-list-item a {
 
 .home.post-list {
 	margin: 2em 0;
+	padding: 0;
+	list-style: none;
 }
 
 .home.post-list .post-list-item {
@@ -285,11 +279,6 @@ header .nav-list-item a {
 	}
 }
 
-.post-content h3 {
-	margin-top: 1.6em;
-	font-size: 2.6em;
-}
-
 .post-content h4 {
 	margin-top: 1.4em;
 	font-size: 2.4em;
@@ -316,11 +305,6 @@ header .nav-list-item a {
 	border-radius: .1em;
 	border-left-color: #9e1900;
 	border-left-width: .1em;
-}
-
-.post-content li {
-	margin-left: 1em;
-	list-style-type: disc;
 }
 
 .post-content blockquote.warning {
