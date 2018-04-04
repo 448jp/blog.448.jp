@@ -4,6 +4,9 @@ block container
     include mixins/post.pug
     +postList()
 
+block ad
+    include partial/google-adsense.pug
+
 block pagination
     include mixins/paginator.pug
     +home()
