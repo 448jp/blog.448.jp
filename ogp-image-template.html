@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>OGP画像自動生成君</title>
+	<style>
+	html {
+		background: #00cccc;
+		color: #ffffff;
+		font-family: sans-serif;
+	}
+
+	body {
+		margin: 0;
+		padding: 4vw;
+	}
+
+	.title-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80vh;
+		font-size: 72px;
+	}
+
+	.title {
+		margin: 0;
+		font-family: "dnp-shuei-anti-std", sans-serif;
+		font-weight: bold;
+		font-feature-settings: "palt";
+		line-height: 1.2;
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+<div class="title-wrapper">
+	<h1 class="title">記事タイトル</h1>
+</div>
+
+<script src="https://use.typekit.net/dcq8piw.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	try {
+		Typekit.load({
+			active: () => {
+				draw();
+			}
+		});
+	} catch (e) {
+	}
+});
+
+async function draw() {
+	const props = await getProps();
+	const title = document.querySelectorAll(".title")[0];
+	title.textContent = props.title;
+	let fontSize = 100;
+	for (; ;) {
+		title.style.fontSize = fontSize + "px";
+		if (title.offsetHeight <= window.innerHeight * 0.8) {
+			break;
+		}
+		fontSize -= 1;
+	}
+}
+</script>
+</body>
+</html>
