@@ -9,6 +9,20 @@ block description
     meta(name='description', content=config.description ? config.description : __('meta_description'))
 
 meta(name='viewport', content='width=device-width, initial-scale=1')
+meta(property="og:site_name", content=config.title)
+if is_post()
+    meta(property="og:type", content="article")
+    meta(property="og:url", content=url_for(page.permalink))
+    meta(property="og:image", content=config.url + "/images/ogp/" + filename(page.path) + ".png")
+    meta(property="og:title", content=page.title)
+    meta(name="twitter:card", content="summary_large_image")
+    meta(name="twitter:image", content=config.url + "/images/ogp/" + filename(page.path) + ".png")
+    meta(name="twitter:title", content=page.title)
+else
+    meta(property="og:type", content="website")
+    meta(property="og:url", content=config.url)
+    meta(property="og:title", content=config.title)
+    meta(property="og:description", content="世路庵（せろあん）のインタラクションデザイナー、沖良矢の個人ブログ。")
 
 link(rel='icon', href=url_for(theme.favicon))
 link(rel='stylesheet', href=url_for('css/theme.css'))

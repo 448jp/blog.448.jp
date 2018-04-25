@@ -44,13 +44,21 @@ mixin postList()
         - })
 
 
+-
+    function filename(path) {
+        const paths = path.split("/");
+        // return paths;
+        return paths[paths.length - 2];
+    }
 
 //- Post Page
 mixin post(item)
     .post
         article.post-block
-            +postInfo(item)
+            p
+                img(src=url_for("images/ogp/" + filename(item.path) + ".png"), width="100%")
             h1.post-title
                 +postTitle(item.title)
+            +postInfo(item)
             .post-content
                 != item.content
