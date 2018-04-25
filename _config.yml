@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.448.jp/
+url: https://blog.448.jp/
 root: /
 permalink: articles/:year/:title/
 permalink_defaults:
@@ -79,7 +79,7 @@ theme_config:
   copyright:
     since: 1998
     name: OKI Yoshiya
-    url: http://blog.448.jp/
+    url: https://blog.448.jp/
   menu:
     About: /about
     GitHub: https://github.com/448jp
