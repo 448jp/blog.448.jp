@@ -85,6 +85,9 @@ theme_config:
     GitHub: https://github.com/448jp
     RSS: /feed.xml
 
+githubEmojis:
+  enable: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
