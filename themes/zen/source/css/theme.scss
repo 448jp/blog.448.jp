@@ -5,12 +5,6 @@
 
 @import "_extensions";
 
-.wrap {
-	width: 90%;
-	max-width: 45em;
-	margin: 0 auto;
-}
-
 ul {
 	margin: 1rem 0;
 }
@@ -328,13 +322,9 @@ table tbody td :last-child {
 	margin-bottom: 2em;
 }
 
-main.container {
-	margin: 2em 0;
-	min-height: 30vh;
-}
+
 
 @media screen and (max-width: 700px) {
-	main.container,
 	.home.post-list,
 	.archive {
 		margin-top: 0;
