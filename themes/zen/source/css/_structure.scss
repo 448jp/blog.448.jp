@@ -37,4 +37,8 @@ main.container {
 .ad {
 	margin: 0 auto;
 	width: 728px;
+
+	@media screen and (max-width: 728px) {
+		width: 100%;
+	}
 }
