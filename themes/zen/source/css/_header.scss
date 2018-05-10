@@ -20,6 +20,11 @@ header {
 			margin: 32px 0;
 			font-size: 6vw;
 		}
+
+		a {
+			text-decoration: none;
+			color: #222831;
+		}
 	}
 
 	.nav-list {
@@ -36,6 +41,7 @@ header {
 	.nav-list-link {
 		padding-bottom: .15em;
 		border-bottom: .1em solid transparent;
+		text-decoration: none;
 
 		&:hover {
 			border-bottom: .1em solid #9e1900;

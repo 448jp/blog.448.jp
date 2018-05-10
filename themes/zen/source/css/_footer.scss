@@ -1,0 +1,24 @@
+.paginator {
+	margin: 2em 0;
+	display: flex;
+	justify-content: space-around;
+
+	.prev,
+	.next {
+		position: relative;
+		box-shadow: 0 .3em #801501;
+		display: inline-block;
+		margin: 0 .2em;
+		padding: .3em 1.5em;
+		border-radius: 5px;
+		color: #ffffff;
+		background-color: #9e1900;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			box-shadow: 0 .2em #801501;
+			top: .1em;
+		}
+	}
+}

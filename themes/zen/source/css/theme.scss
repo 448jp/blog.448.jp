@@ -1,6 +1,8 @@
 @import "_structure";
 @import "_header";
+@import "_footer";
 
+@import "_post-list";
 @import "_post";
 
 @import "_extensions";
@@ -13,12 +15,6 @@ p {
 	letter-spacing: -.01em;
 	line-height: 1.8;
 	margin: 1.2em 0;
-}
-
-a,
-a:active {
-	color: #222831;
-	text-decoration: none;
 }
 
 h1,
@@ -140,8 +136,9 @@ table tbody td :last-child {
 }
 
 .archive .post-title-link {
-	color: #9e1900;
 	padding-left: 1em;
+	color: #9e1900;
+	text-decoration: none;
 }
 
 .archive .post-title-link:hover {
@@ -284,31 +281,6 @@ table tbody td :last-child {
 
 #mask #mask-image {
 	max-width: 95%;
-}
-
-.paginator {
-	margin: 2em 0;
-	display: flex;
-	justify-content: space-around;
-}
-
-.paginator .prev,
-.paginator .next {
-	position: relative;
-	box-shadow: 0 .3em #801501;
-	display: inline-block;
-	margin: 0 .2em;
-	padding: .3em 1.5em;
-	border-radius: 5px;
-	color: #ffffff;
-	background-color: #9e1900;
-	font-weight: 600;
-}
-
-.paginator .prev:hover,
-.paginator .next:hover {
-	box-shadow: 0 .2em #801501;
-	top: .1em;
 }
 
 .ds-thread,
