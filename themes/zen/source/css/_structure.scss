@@ -42,3 +42,28 @@ main.container {
 		width: 100%;
 	}
 }
+
+.author {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 1rem auto;
+	padding: 2rem 0;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	max-width: 45em;
+
+	&__image {
+		border-radius: 50%;
+	}
+
+	&__name {
+		margin-bottom: 0.5rem;
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+	&__body {
+		margin: 0.5rem 0 1rem;
+	}
+}
