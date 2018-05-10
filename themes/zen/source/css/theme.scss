@@ -191,19 +191,6 @@ table tbody td :last-child {
 	content: "";
 }
 
-.post-content h1,
-.post-block .post-title {
-	margin: 0 0 1.8rem;
-	font-size: 42px;
-	font-family: "dnp-shuei-anti-std", sans-serif;
-	font-feature-settings : "palt";
-
-	@media (max-width: 768px) {
-		font-size: 9vw;
-		line-height: 1.2;
-	}
-}
-
 .post-content h5 {
 	margin-top: 1.2em;
 	font-size: 2.2em;

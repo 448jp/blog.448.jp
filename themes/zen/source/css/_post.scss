@@ -1,3 +1,17 @@
+.post-block {
+	.post-title {
+		margin: 0 0 1.8rem;
+		font-size: 42px;
+		font-family: "dnp-shuei-anti-std", sans-serif;
+		font-feature-settings : "palt";
+
+		@media (max-width: 768px) {
+			font-size: 6vw;
+			line-height: 1.2;
+		}
+	}
+}
+
 .post-content {
 	h2 {
 		margin: 1.8rem 0 0.4rem;
@@ -33,8 +47,12 @@
 		font-size: 17px;
 
 		@media (max-width: 768px) {
-			font-size: 3.6vw;
+			font-size: 4.3vw;
 		}
+	}
+
+	pre {
+		tab-size: 4;
 	}
 
 	ol,
