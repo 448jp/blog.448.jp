@@ -6,6 +6,7 @@
     "generate": "npm-run-all generate:images generate:hexo",
     "generate:hexo": "hexo generate",
     "generate:images": "node ogp-image-generate-new",
+    "generate:images:all": "node ogp-image-generate-all",
     "new": "hexo new post title"
   },
   "repository": {
