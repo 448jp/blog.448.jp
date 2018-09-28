@@ -1,0 +1,5 @@
+mixin post(item)
+    .related
+        h3.related__title 関連記事
+        .related__post-title
+            != popular_posts({}, item)

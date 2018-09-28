@@ -17,6 +17,10 @@ block ad
 block author
     include partial/author.pug
 
+block related
+    include mixins/related.pug
+    +post(page)
+
 block pagination
     include mixins/paginator.pug
     +post()
