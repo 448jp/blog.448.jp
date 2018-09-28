@@ -68,6 +68,28 @@ main.container {
 	}
 }
 
+.info {
+	margin: 0 auto;
+	padding: 0;
+	border-bottom: 1px solid #eeeeee;
+	max-width: 45em;
+
+	&__title {
+		margin-bottom: 0.5rem;
+		font-size: 26px;
+		font-weight: bold;
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+	}
+
+	&__body {
+		margin: 0.5rem 0 1rem;
+	}
+}
+
 .related {
 	display: flex;
 	//justify-content: center;
