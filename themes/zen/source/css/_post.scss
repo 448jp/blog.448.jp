@@ -44,7 +44,7 @@
 
 	p {
 		margin: 0 0 1.6rem;
-		font-size: 17px;
+		font-size: 19px;
 
 		@media (max-width: 768px) {
 			font-size: 4.3vw;
@@ -57,11 +57,14 @@
 
 	ol,
 	ul {
+		margin-bottom: 1.6rem;
 		padding: 0;
 	}
 
 	li {
 		margin-left: 1.5rem;
+		font-size: 19px;
+		line-height: 1.8rem;
 	}
 
 	table {
